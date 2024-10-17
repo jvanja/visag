@@ -1,14 +1,12 @@
-"use client";
-// import Image from "next/image";
-// import Header from '../components/Header';
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { useState } from "react";
 import VideoPlayer from "../components/VideoPlayer";
 import Sidebar from "../components/Sidebar";
-import Header from "../components/Header";
 import SubNav from "../components/SubNav";
 import LetterDescription from "../components/LetterDescription";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function Home() {
+const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const letters = [
     { letter: "А", name: "a" },
     { letter: "Б", name: "b" },
@@ -57,29 +55,43 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col h-screen">
-      <Header />
-      <div className="flex flex-1">
-        <Sidebar onSelectLetter={setSelectedLetter} letters={letters} />
-        <div className="flex flex-col flex-1 bg-gray-500 px-4">
-          <SubNav
-            selectedLetter={letters[selectedLetterIndex].letter}
-            changePlaybackSpeed={onChangePlaybackSpeed}
-            showLetterDescription={onShowLetterDescription}
+    <div className="flex">
+      <Sidebar onSelectLetter={setSelectedLetter} letters={letters} />
+      <div className="flex flex-col flex-1 bg-gray-500 px-4">
+        <SubNav
+          selectedLetter={letters[selectedLetterIndex].letter}
+          changePlaybackSpeed={onChangePlaybackSpeed}
+          showLetterDescription={onShowLetterDescription}
+        />
+        <div className="relative h-full">
+          <VideoPlayer
+            videoSrc={`/videos/${selectedLetter}.mp4`}
+            slowPlayback={slowPlayback}
           />
-          <div className="relative h-full">
-            <VideoPlayer
-              videoSrc={`/videos/${selectedLetter}.mp4`}
-              slowPlayback={slowPlayback}
-            />
-            <LetterDescription
-              letter={selectedLetter}
-              showLetterDescription={showLetterDescription}
-            />
-          </div>
+          <LetterDescription
+            letter={selectedLetter}
+            showLetterDescription={showLetterDescription}
+          />
         </div>
       </div>
     </div>
   );
 };
 
+// export const getStaticProps = async ({ locale }: {locale: string}) => {
+//   const props = await serverSideTranslations(locale, ['en', 'footer', 'common'])
+//   return {
+//     props,
+//   }
+// }
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale)),
+    // ...(await serverSideTranslations(locale ?? 'sr', [
+    //   'common',
+    //   'footer',
+    // ])),
+  },
+});
+
+export default Home;

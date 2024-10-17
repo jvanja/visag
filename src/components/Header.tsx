@@ -1,24 +1,38 @@
+import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
-import "./header.css";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from "next-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full bg-gray-900 text-white p-4 flex items-center justify-between">
-      <div className="flex items-center gap-4 text-sm">
-        <Image src="/images/logo.webp" className="Logo" alt="Logo" width="30" height="30"/>
-        <a href="#" className="hover:underline">
-          {t("About")}
-        </a>
-        <a href="#" className="hover:underline">
-          {t("Contact")}
-        </a>
-      </div>
-      <LanguageSwitcher />
-    </div>
+    <>
+      <Head>
+        <title>Visag - Vizuelni stimulator govora</title>
+      </Head>
+      <header className="w-full bg-gray-900 text-white p-4 flex items-center justify-between">
+        <div className="flex items-center gap-4 text-sm">
+          <Link href="/">
+            <Image
+              src="/images/logo.webp"
+              className="Logo"
+              alt="Logo"
+              width="30"
+              height="30"
+            />
+          </Link>
+          <Link href="/about" className="hover:underline">
+            {t("about")}
+          </Link>
+          <Link href="/contat" className="hover:underline">
+            {t("contact")}
+          </Link>
+        </div>
+        <LanguageSwitcher />
+      </header>
+    </>
   );
 };
 

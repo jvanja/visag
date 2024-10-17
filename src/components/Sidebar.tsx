@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./sidebar.css";
 
 const Sidebar = ({
   onSelectLetter,

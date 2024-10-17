@@ -5,12 +5,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useRouter } from 'next/navigation'
-
+// import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/router'
 
 const LanguageSwitcher = () => {
   const router = useRouter();
   const handleOptionSelect = (option: string) => {
+
     router.push(
       {
         pathname: router.pathname,
@@ -27,8 +28,8 @@ const LanguageSwitcher = () => {
         <SelectValue placeholder="Language" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="en-US">English</SelectItem>
-        <SelectItem value="sr-Cyrl">Српски</SelectItem>
+        <SelectItem value="en">English</SelectItem>
+        <SelectItem value="sr">Српски</SelectItem>
       </SelectContent>
     </Select>
   );
