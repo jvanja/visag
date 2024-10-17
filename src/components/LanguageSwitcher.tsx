@@ -5,12 +5,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-// import { useRouter } from 'next/navigation'
 import { useRouter } from 'next/router'
+import cookies from 'js-cookie';
 
 const LanguageSwitcher = () => {
   const router = useRouter();
+  const locale = cookies.get('NEXT_LOCALE') || 'sr';
+  
   const handleOptionSelect = (option: string) => {
+
+    cookies.set('NEXT_LOCALE', option);
 
     router.push(
       {
@@ -23,7 +27,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <Select onValueChange={handleOptionSelect} defaultValue="sr-Cyrl">
+    <Select onValueChange={handleOptionSelect} defaultValue={locale}>
       <SelectTrigger className="w-[180px] bg-gray-700">
         <SelectValue placeholder="Language" />
       </SelectTrigger>
