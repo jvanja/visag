@@ -7,7 +7,6 @@ const LetterDescription = ({
   showLetterDescription: boolean;
 }) => {
   const { t } = useTranslation(letter);
-  console.log(letter)
 
   return (
     <div
