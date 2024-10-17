@@ -1,6 +1,7 @@
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 const AboutPage = () => {
   // const { t } = useTranslation()
-
   return (
       <main className="bg-gray-500 text-white">
         <div className="px-4 p-8 max-w-4xl m-auto">
@@ -144,5 +145,12 @@ const AboutPage = () => {
       </main>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => {
+
+  return {
+    props: { ...(await serverSideTranslations(locale))
+  },
+}};
 
 export default AboutPage;
