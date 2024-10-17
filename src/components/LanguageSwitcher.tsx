@@ -10,7 +10,7 @@ import cookies from 'js-cookie';
 
 const LanguageSwitcher = () => {
   const router = useRouter();
-  const locale = cookies.get('NEXT_LOCALE') || 'sr';
+  const locale = cookies.get('NEXT_LOCALE') || 'en';
   
   const handleOptionSelect = (option: string) => {
 
