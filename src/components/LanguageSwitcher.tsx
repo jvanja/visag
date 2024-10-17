@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
         pathname: router.pathname,
         query: router.query,
       },
-      null,
+      router.asPath,
       { locale: option },
     );
   };
