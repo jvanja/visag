@@ -7,10 +7,12 @@ import {
 } from "@/components/ui/select";
 import { useRouter } from 'next/router'
 import cookies from 'js-cookie';
+import nextI18nextConfig from 'next-i18next.config'
 
 const LanguageSwitcher = () => {
+  const DEFAULT_LOCALE_FROM_CONFIG = nextI18nextConfig.i18n.defaultLocale;
   const router = useRouter();
-  const locale = cookies.get('NEXT_LOCALE') || 'en';
+  const defaultLocale = cookies.get('NEXT_LOCALE') || DEFAULT_LOCALE_FROM_CONFIG;
   
   const handleOptionSelect = (option: string) => {
 
@@ -27,7 +29,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <Select onValueChange={handleOptionSelect} defaultValue={locale}>
+    <Select onValueChange={handleOptionSelect} defaultValue={defaultLocale}>
       <SelectTrigger className="w-[180px] bg-gray-700">
         <SelectValue placeholder="Language" />
       </SelectTrigger>
