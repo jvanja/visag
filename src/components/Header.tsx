@@ -3,9 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "next-i18next";
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
   const { t } = useTranslation();
+  const pathname = usePathname()
 
   return (
     <>
@@ -23,10 +25,12 @@ const Header = () => {
               height="30"
             />
           </Link>
-          <Link href="/about" className="hover:underline">
+          <Link href="/about" 
+            className={`hover:text-primary ${pathname === '/about' ? 'text-primary' : 'text-white'}`}>
             {t("about")}
           </Link>
-          <Link href="/contact" className="hover:underline">
+          <Link href="/contact" 
+            className={`hover:text-primary ${pathname === '/contact' ? 'text-primary' : 'text-white'}`}>
             {t("contact")}
           </Link>
         </div>
