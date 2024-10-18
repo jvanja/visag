@@ -1,9 +1,9 @@
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { useState } from "react";
-import VideoPlayer from "../components/VideoPlayer";
-import Sidebar from "../components/Sidebar";
-import SubNav from "../components/SubNav";
-import LetterDescription from "../components/LetterDescription";
+import VideoPlayer from "@/components/VideoPlayer";
+import Sidebar from "@/components/Sidebar";
+import SubNav from "@/components/SubNav";
+import LetterDescription from "@/components/LetterDescription";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
