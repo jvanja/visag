@@ -7,12 +7,12 @@ import {
 } from "@/components/ui/select";
 import { useRouter } from 'next/router'
 import cookies from 'js-cookie';
-import nextI18nextConfig from 'next-i18next.config'
+import { useTranslation } from 'next-i18next'
 
 const LanguageSwitcher = () => {
-  const DEFAULT_LOCALE_FROM_CONFIG = nextI18nextConfig.i18n.defaultLocale;
+  const { i18n } = useTranslation()
   const router = useRouter();
-  const defaultLocale = cookies.get('NEXT_LOCALE') || DEFAULT_LOCALE_FROM_CONFIG;
+  const defaultLocale = cookies.get('NEXT_LOCALE') || i18n.language;
   
   const handleOptionSelect = (option: string) => {
 

@@ -14,10 +14,8 @@ export default function SubNav({
   const { t } = useTranslation();
   
 function handleEntailmentRequest(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-    //do something...
     e.preventDefault();
     showLetterDescription()
-    
 }
   return (
     <div className="p-4 -mx-4 bg-gray-600 text-slate-300 flex justify-between borde">
