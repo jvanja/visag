@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/dialog"
 const Intro = () => {
   return (
-    <Dialog>
+    <Dialog defaultOpen={true}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Visag - Vizuelni stimulator govora</DialogTitle>
