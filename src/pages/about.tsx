@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const AboutPage = () => {
   // const { t } = useTranslation()
   return (
-      <main className="bg-gray-500 text-white">
+      <main className="bg-gray-800 text-white">
         <div className="px-4 p-8 max-w-4xl m-auto">
           <h1>Vizuelni Stimulator Glasova (VISAG)</h1>
           Sluh i vid su u razvoju govora kod deteta veoma povezani.Vizuelne

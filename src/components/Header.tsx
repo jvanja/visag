@@ -26,7 +26,7 @@ const Header = () => {
           <Link href="/about" className="hover:underline">
             {t("about")}
           </Link>
-          <Link href="/contat" className="hover:underline">
+          <Link href="/contact" className="hover:underline">
             {t("contact")}
           </Link>
         </div>
