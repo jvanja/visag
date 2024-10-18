@@ -97,3 +97,8 @@ ol {
 ul {
   list-style-type: disc;
 }
+
+.bg-gradient {
+background: rgb(2,0,36);
+background: linear-gradient(132deg, rgb(110 14 135) 0%, rgb(93 17 145) 35%, rgb(128 27 167) 100%);
+}
