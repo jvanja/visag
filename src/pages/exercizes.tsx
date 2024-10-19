@@ -12,8 +12,12 @@ const ContactPage = () => {
         <h2>GOVORNI APARAT</h2>
         Organi koji učestvuju u obrazovanju zvuka /govora/ nazivaju se govornim
         aparatom. Govorni aparat sačinjavaju organi koji su uključeni u ovaj
-        proces. U zavisnosti od funkcije delimo ih na: • DISAJNE organe •
-        LARINKS • PRAZNINE iznad larinksa.
+        proces. U zavisnosti od funkcije delimo ih na:
+        <ul>
+          <li>DISAJNE organe</li>
+          <li>LARINKS</li>
+          <li>PRAZNINE iznad larinksa.</li>
+        </ul>
         <h2>I DISAJNE ORGANE sačinjavaju:</h2>
         <ol>
           <li>Pluća</li>
