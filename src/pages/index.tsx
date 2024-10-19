@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { useState } from "react";
 import VideoPlayer from "@/components/VideoPlayer";
