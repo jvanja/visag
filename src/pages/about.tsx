@@ -1,13 +1,14 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Link from "next/link";
 
 const AboutPage = () => {
   // const { t } = useTranslation()
   return (
     <main className="bg-gray-800 text-white">
-      <div className="px-4 p-8 max-w-4xl m-auto">
+      <div className="px-4 pt-20 pb-28 max-w-4xl m-auto">
         <h1>
           Dobrodošli na zvaničnu stranicu aplikacije <strong>VISAG</strong> -{" "}
-          <em>Vizuelni Stimulator Glasova</em>!
+          <em>Vizuelni Stimulator Glasova!</em>
         </h1>
 
         <p>
@@ -64,6 +65,8 @@ const AboutPage = () => {
             stimulacijama i drugim metodama za razvoj slušne percepcije.
           </li>
         </ul>
+
+        <p>Detaljno o ovim vežbama možete pročitati na <Link href="/exercizes">ovoj stranici</Link>.</p>
 
         <p>
           <strong>Istražite VISAG i otkrijte novi svet komunikacije.</strong>{" "}

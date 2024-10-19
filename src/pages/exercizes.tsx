@@ -1,10 +1,10 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
 const ContactPage = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <main className="bg-gray-800 text-white">
-      <div className="px-4 p-48 max-w-4xl m-auto">
+      <div className="px-4 pt-20 pb-28 max-w-4xl m-auto">
         <h1>Preporucene vezbe pred rad koristeci VISAG</h1>
         Pre nego počnemo koristiti VISAG potrebno je pripremiti kod deteta
         govorni aparat odgovarajućim vežbama disanja i vežbama motorike govornog
@@ -15,44 +15,81 @@ const ContactPage = () => {
         proces. U zavisnosti od funkcije delimo ih na: • DISAJNE organe •
         LARINKS • PRAZNINE iznad larinksa.
         <h2>I DISAJNE ORGANE sačinjavaju:</h2>
-        1. pluća 2. bronhije 3. traheja /dušnik/
+        <ol>
+          <li>Pluća</li>
+          <li>Bronhije</li>
+          <li>Traheja /dušnik/</li>
+        </ol>
         <h2>II LARINKS</h2>
         grkljan se nalazi na raskrsnici disajnog i digestivnog puta u srednjoj
         liniji prednje strane vrata. Pomoću njega se obrazuje glas.
-        <h2>III PRAZNINE IZNAD LARINKSA</h2> čine tri šupljine: 1.
-        grlena-ždreona 2. usna-između larinksa i usta 3. nosna-šupljina nosa.
+        <h2>III PRAZNINE IZNAD LARINKSA</h2> čine tri šupljine:
+        <ol>
+          <li>Grlena-ždrela</li>
+          <li>Usna - između larinksa i usta</li>
+          <li>Nosna - šupljina nosa</li>
+        </ol>
         <h2>VEŽBE MOTORIKE GOVORNOG APARATA</h2>
         <h3>Vežbe usana</h3>
         Usne su veoma pokretljive u toku artikulacije velikog broja glasova. One
         mogu biti:OTVORENE, ZATVORENE, ISPUPČENE, ZAOKRUGLJENE, ELIPSASTE,
         RAZVUČENE, PODVIJENE, POLUZATVORENE, POLUOTVORENE, ISTURENE I NEUTRALNE.
         U radu sa ovom decom, posebno u procesu artikulacije veoma su važne
-        vežbe usana. 1. Otvaranje i zatvaranje sa zastajanjem. 2. Sa stisnutim
-        zubima pokretanje usana nagore, nadole, ulevo,udesno. 3. Pokretanje
-        usana u sva četiri pravca sa otvorenim ustima. 4. Isticanje zatvorenih
-        usana i njhovo zaokruživanje 5. Jako otvaranje usta, rastezanje usana i
-        naizmenično razvlačenje usana u stranu. 6. Podizanje gornje usne prema
-        nosu i što niže spuštanje. 7. Naizmenično grickanje gornje pa donje usne
-        i obratno. 8. Imitiranje sisanja, usisavanje usana, oblizivanje-usnom o
-        usnu, davanje poljupca, isturanje i povlačenje usana.
+        vežbe usana.
+        <ol>
+          <li>Otvaranje i zatvaranje sa zastajanjem.</li>
+          <li>
+            Sa stisnutim zubima pokretanje usana nagore, nadole, ulevo, udesno.
+          </li>
+          <li>Pokretanje usana u sva četiri pravca sa otvorenim ustima.</li>
+          <li>Isticanje zatvorenih usana i njihovo zaokruživanje.</li>
+          <li>
+            Jako otvaranje usta, rastezanje usana i naizmenično razvlačenje
+            usana u stranu.
+          </li>
+          <li>Podizanje gornje usne prema nosu i što niže spuštanje.</li>
+          <li>Naizmenično grickanje gornje pa donje usne i obratno.</li>
+          <li>
+            Imitiranje sisanja, usisavanje usana, oblizivanje - usnom o usnu,
+            davanje poljupca, isturanje i povlačenje usana.
+          </li>
+        </ol>
         <br />
         9. Razvlačenje uglova usana sa i bez pokazivanja zuba.
         <h3>Vežbe jezika</h3>
         Motorika jezika je veoma važna zato što pri građenju glasova jezik
         učestvuje u artikulaciji velikog broja glasova. Pokretljivost jezika
-        treba vežbati na različite načine. 1. Izbacivanje i uvlačenje jezika. 2.
-        Oblizivanje jezikom zuba sa spoljašnje i unutrašnje strane. 3.
-        Oblizivanje usana vrhom jezika / kruženje/ sa unutrašnje i spoljašnje
-        strane. 4. Vrhom jezika /usta su otvorena/ dodirivanje alveola gornjih i
-        donjih sekutića. 5. Vrh jezika povlačiti ka vrhu nosa i ka dnu brade. 6.
-        Povlačenje korena jezika ka mekom nepcu. 7. Brzo pokretanje jezika
-        unutra – napolje - gore – dole i kružno kretanje. 8. Upiranje jezikom u
-        donje i gornje sekutiće. 9. Pravljenje žleba po sredini jezika. 10.
-        Vibriranje vrhom jezika r r r r r r r r r<h2>Vežbe donje vilice</h2>
+        treba vežbati na različite načine.
+        <ol>
+          <li>Izbacivanje i uvlačenje jezika.</li>
+          <li>Oblizivanje jezikom zuba sa spoljašnje i unutrašnje strane.</li>
+          <li>
+            Oblizivanje usana vrhom jezika / kruženje / sa unutrašnje i
+            spoljašnje strane.
+          </li>
+          <li>
+            Vrhom jezika / usta su otvorena / dodirivanje alveola gornjih i
+            donjih sekutića.
+          </li>
+          <li>Vrh jezika povlačiti ka vrhu nosa i ka dnu brade.</li>
+          <li>Povlačenje korena jezika ka mekom nepcu.</li>
+          <li>
+            Brzo pokretanje jezika unutra – napolje - gore – dole i kružno
+            kretanje.
+          </li>
+          <li>Upiranje jezikom u donje i gornje sekutiće.</li>
+          <li>Pravljenje žleba po sredini jezika.</li>
+          <li>Vibriranje vrhom jezika "r r r r r r r r r".</li>
+        </ol>
+        <h2>Vežbe donje vilice</h2>
         Pravilnost artikulacije zavisi i od položaja i pokretljivosti donje
-        vilice. 1. Otvaranje i zatvaranje vilice. 2. Pokretanje vilice
-        levo-desno, dole –gore sa otvorenim ustima. 3. Pokretanje vilice
-        levo-desno, dole –gore sa zatvorenim ustima. 4. Kruženje donjom vilicom.
+        vilice.
+        <ol>
+          <li>Otvaranje i zatvaranje vilice.</li>
+          <li>Pokretanje vilice levo-desno, dole-gore sa otvorenim ustima.</li>
+          <li>Pokretanje vilice levo-desno, dole-gore sa zatvorenim ustima.</li>
+          <li>Kruženje donjom vilicom.</li>
+        </ol>
         <h2>VEŽBE DISANJA</h2>
         Disanje ima izuzetan značaj u životnoj funkciji ćelija i organizma, a
         takode i osnovni faktor u funkcionisanju govornog aparata. Vazdušna
@@ -137,7 +174,7 @@ const ContactPage = () => {
         poziciju pri disanju. Ako je vilični ugao manji od ugla koji donja
         vilica zauzima pri disanju kroz nos sa zatvorenim ustima, tada bismo
         njihov položaj označili kao minusan. Veličinu viličnog ugla možemo
-        podeliti na : 
+        podeliti na :
         <ol>
           <li>POLUZATVOREN </li>
           <li>POLUOTVOREN </li>
