@@ -79,7 +79,7 @@ const ContactPage = () => {
           </li>
           <li>Upiranje jezikom u donje i gornje sekutiće.</li>
           <li>Pravljenje žleba po sredini jezika.</li>
-          <li>Vibriranje vrhom jezika "r r r r r r r r r".</li>
+          <li>Vibriranje vrhom jezika &quot;r r r r r r r r r&quot;.</li>
         </ol>
         <h2>Vežbe donje vilice</h2>
         Pravilnost artikulacije zavisi i od položaja i pokretljivosti donje
