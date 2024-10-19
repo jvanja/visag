@@ -140,7 +140,7 @@ const ContactPage = () => {
           <li>Šum vetra &quot;F.........F......&quot;</li>
         </ol>
         NAPOMENA: Kod izvođenja ovih vežbi treba biti oprezan, da ne bi dovele
-        do neželjenih efekata /provociranje epi napada i sl./
+        do neželjenih efekata / provociranje epi napada i slično.
         <h2>FORMIRANJE GLASOVA</h2>
         <ol>
           <li>
