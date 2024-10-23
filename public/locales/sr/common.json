@@ -1,10 +1,12 @@
 {
   "intro": "<p>Dobrodošli na zvaničnu stranicu aplikacije <strong>VISAG</strong> - <em>Vizuelni Stimulator Glasova</em>! </p><p>Pre korišćenja VISAG programa, preporučujemo da pročitate  naše kratko <a href=\"/about\">uputstvo</a>.</p><p>Za bilo koju informaciju, kontaktirajte nas na <a href=\"mailto:info@visag.rs\">info@visag.rs</a>.</p>",
   "about": "О Висаг програму",
+  "aboutAuthorLink": "О аутору програма",
   "contact": "Контакт",
   "slow": "Успорено",
   "normal": "Нормално",
   "simple": "Једноставно",
   "sound": "Глас",
-  "contactBody": "За било каква питања или сугестије, молимо вас да нас контактирате преко е-маил адресе: <a href=\"mailto:info@visag.rs\">info@visag.rs</a>"
+  "contactBody": "За било каква питања или сугестије, молимо вас да нас контактирате преко е-маил адресе: <a href=\"mailto:info@visag.rs\">info@visag.rs</a>",
+  "aboutAuthor": "<p>Jovan Jelić je specijalista za defektologiju, surdoaudiologiju i logopediju, sa višedecenijskim iskustvom u radu sa decom sa poremećajem govora.</p> <h2>Profesionalno Iskustvo</h2> <p>Jovan je svoju karijeru započeo u Zavodu za rehabilitaciju sluha i govora u Sarajevu, gde je radio kao logoped. Nakon Sarajeva, prelazi u Užice, gde je radio kao profesor u Školi za slušno oštećenu decu “Miodrag V. Matić” do kraja svoje profesionalne karijere. Tokom celog svog radnog veka, takođe je vodio i privatnu praksu kao logoped.</p> <h2>Obrazovanje</h2> <p>Završio je Defektološki fakultet, sa specijalizacijom iz surdoaudiologije i logopedije, u Beogradu.</p> <h2>Veštine i Postignuća</h2> <p>Tokom svoje bogate karijere, Jovan je uspešno pomogao brojnim decom sa različitim govornim poremećajima. Autor je programa VISAG (Vizuelni stimulator artikulacije glasova), koji značajno pomaže osobama sa govornim patologijama da lako artikulišu sve glasove srpskog jezika.</p>"
 }

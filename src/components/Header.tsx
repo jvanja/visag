@@ -29,6 +29,10 @@ const Header = () => {
             className={`hover:text-primary ${pathname === '/about' ? 'text-primary' : 'text-white'}`}>
             {t("about")}
           </Link>
+          <Link href="/jovan-jelic"
+            className={`hover:text-primary ${pathname === '/jovan-jelic' ? 'text-primary' : 'text-white'}`}>
+            {t("aboutAuthorLink")}
+          </Link>
           <Link href="/contact" 
             className={`hover:text-primary ${pathname === '/contact' ? 'text-primary' : 'text-white'}`}>
             {t("contact")}

@@ -1,10 +1,12 @@
 {
   "intro": "Welcome to the official website of the <strong>VISAG</strong> application - <em>Visual Sound Stimulator</em>!<p>For any information, contact us at <a href=\"mailto:info@visag.rs\">info@visag.rs</a></p>",
   "about": "About Visag",
+  "aboutAuthorLink": "About Author",
   "contact": "Contact",
   "slow": "Slow",
   "sound": "Sound",
   "normal": "Nomal",
   "simple": "Simple",
-  "contactBody": "For any questions or suggestions, please contact us via the e-mail address: <a href=\"mailto:info@visag.rs\">info@visag.rs</a>"
+  "contactBody": "For any questions or suggestions, please contact us via the e-mail address: <a href=\"mailto:info@visag.rs\">info@visag.rs</a>",
+  "aboutAuthor": "<p>Jovan Jelić is a specialist in defectology, surdoaudiology, and speech therapy, with several decades of experience in working with children with speech disorders.</p><h2>Professional Experience</h2><p>Jovan began his career at the Institute for Rehabilitation of Hearing and Speech in Sarajevo, where he worked as a speech therapist. Following his tenure in Sarajevo, he moved to Užice, where he served as a professor at the \"Miodrag V. Matić\" School for Hearing Impaired Children until the end of his professional career. Throughout his career, he also maintained a private practice as a speech therapist.</p><h2>Education</h2><p>He graduated from the Faculty of Defectology, specializing in surdoaudiology and speech therapy, in Belgrade.</p><h2>Skills and Achievements</h2> <p>Throughout his extensive career, Jovan has successfully helped numerous children with various speech disorders. He is the author of the VISAG program (Visual Stimulator for Voice Articulation), which significantly aids individuals with speech pathologies in easily articulating all sounds of the Serbian language.</p>"
 }
