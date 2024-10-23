@@ -28,7 +28,7 @@ function handleEntailmentRequest(e: React.MouseEvent<HTMLButtonElement, MouseEve
           <Label htmlFor="slow-mode">{t("slow")}</Label>
         </div>
         <button type="button" className="text-center bg-gray-800 px-10 p-1 rounded-sm border border-gray-600" onClick={(e) => handleEntailmentRequest(e)}>
-          ?
+          {t('aboutSound')} {selectedLetter}
         </button>
       </div>
     </div>
