@@ -58,13 +58,13 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="flex">
       <Sidebar onSelectLetter={setSelectedLetter} letters={letters} />
-      <div className="flex flex-col flex-1 bg-gray-500 px-4">
+      <div className="flex flex-col flex-1 bg-gray-800 px-4">
         <SubNav
           selectedLetter={letters[selectedLetterIndex].letter}
           changePlaybackSpeed={onChangePlaybackSpeed}
           showLetterDescription={onShowLetterDescription}
         />
-        <div className="relative h-full">
+        <div className="relative h-full grid grid-cols-4 gap-4">
           <VideoPlayer
             videoSrc={`/videos/${selectedLetter}.mp4`}
             slowPlayback={slowPlayback}

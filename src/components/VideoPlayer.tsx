@@ -14,10 +14,10 @@ const VideoPlayer = (props: { videoSrc: string; slowPlayback: boolean }) => {
   }, [props]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className="flex justify-center items-center h-full">
+    <div className="col-span-3">
       <video
         ref={videoPlayer}
-        className="w-full h-auto max-w-4xl"
+        className="w-full h-auto"
         controls
         preload="auto"
         src={props.videoSrc}
