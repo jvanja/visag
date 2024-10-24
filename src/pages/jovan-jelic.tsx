@@ -6,14 +6,14 @@ const AboutPage = () => {
   const { t } = useTranslation();
   return (
     <main className="bg-gray-800 text-white">
-      <div className="px-4 pt-20 pb-28 max-w-4xl m-auto">
+      <div className="px-4 pt-10 pb-28 max-w-4xl m-auto">
         <div className="flex justify-center mb-12">
           <Image
             src="/images/jovan-jelic.jpg"
             className="Logo"
             alt="Logo"
-            width="370"
-            height="370"
+            width="842"
+            height="595"
           />
         </div>
         <div dangerouslySetInnerHTML={{ __html: t("aboutAuthor") }}></div>
