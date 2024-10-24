@@ -13,7 +13,7 @@ const LetterDescription = ({
       className={`${showLetterDescription ? "invisible" : ""} overflow-hidden text-white -mx-4 col-span-1`}
     >
       <div className="max-w-6xl mx-auto h-full">
-        <div className="max-h-full overflow-auto bg-gray-800 p-8">
+        <div className="max-h-full overflow-auto p-8">
           {/* <h2 className="mb-2 text-lg font-bold">Glas {letter}</h2> */}
           <div
             className="text-slate-400 text-base"

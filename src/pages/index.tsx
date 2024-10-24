@@ -58,7 +58,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="flex">
       <Sidebar onSelectLetter={setSelectedLetter} letters={letters} />
-      <div className="flex flex-col flex-1 bg-gray-800 px-4">
+      <div className="flex flex-col flex-1 bg-black px-4">
         <SubNav
           selectedLetter={letters[selectedLetterIndex].letter}
           changePlaybackSpeed={onChangePlaybackSpeed}

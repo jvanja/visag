@@ -17,7 +17,7 @@ const VideoPlayer = (props: { videoSrc: string; slowPlayback: boolean }) => {
     <div className="col-span-3">
       <video
         ref={videoPlayer}
-        className="w-full h-auto"
+        className="w-full h-auto max-w-5xl"
         controls
         preload="auto"
         src={props.videoSrc}
