@@ -6,7 +6,7 @@ const ContactPage = () => {
     <main className="bg-gray-800 text-white">
       <div className="px-4 p-48 max-w-4xl m-auto">
         <h1> {t("contact")} </h1>
-        <p dangerouslySetInnerHTML={{ __html: t('contactBody') }}></p>
+        <div dangerouslySetInnerHTML={{ __html: t('contactBody') }}></div>
       </div>
     </main>
   );
