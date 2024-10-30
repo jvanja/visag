@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, memo } from "react";
 
-const VideoPlayer = (props: { videoSrc: string; slowPlayback: boolean }) => {
+const VideoPlayer = (props: { videoSrc: string; slowPlayback: boolean, showLetterDescription: boolean }) => {
   const [hasInteracted, setHasInteracted] = useState(false); // Track if user interacted
   const videoPlayer = useRef<HTMLVideoElement>(null);
 
@@ -14,7 +14,7 @@ const VideoPlayer = (props: { videoSrc: string; slowPlayback: boolean }) => {
   }, [props]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className="col-span-3">
+    <div className={`${props.showLetterDescription ? "col-span-12 lg:col-span-3" : ""} col-span-12`}>
       <video
         ref={videoPlayer}
         className="w-full h-auto max-w-5xl"

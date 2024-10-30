@@ -43,7 +43,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   const [selectedLetter, setSelectedLetter] = useState("a");
   const [slowPlayback, setSlowPlayback] = useState(false);
-  const [showLetterDescription, setShowLetterDescription] = useState(false);
+  const [showLetterDescription, setShowLetterDescription] = useState(true);
 
   const selectedLetterIndex = letters.findIndex(
     (letter) => letter.name === selectedLetter,
@@ -68,6 +68,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
           <VideoPlayer
             videoSrc={`/videos/${selectedLetter}.mp4`}
             slowPlayback={slowPlayback}
+            showLetterDescription={showLetterDescription}
           />
           <LetterDescription
             letter={selectedLetter}
