@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutPage = () => {
   const { t } = useTranslation();
   return (
-    <main className="bg-gray-800 text-white">
+    <main id="about-page" className="bg-gray-800 text-white">
       <div className="px-4 pt-10 pb-28 max-w-4xl m-auto">
         <div className="flex justify-center mb-12">
           <Image

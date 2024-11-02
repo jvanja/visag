@@ -110,3 +110,9 @@ ul {
 button svg {
   color: white;
 }
+
+@media (min-width: 1024px) {
+  #about-page {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(63 26 78) 40%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 100%);
+  }
+}
