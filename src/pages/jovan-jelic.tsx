@@ -10,6 +10,7 @@ const AboutPage = () => {
         <div className="flex justify-center mb-12">
           <Image
             src="/images/jovan-jelic.jpg"
+            priority={true}
             className="Logo"
             alt="Logo"
             width="842"
