@@ -17,7 +17,7 @@ const VideoPlayer = (props: { videoSrc: string; slowPlayback: boolean, showLette
     <div className={`${props.showLetterDescription ? "col-span-12 lg:col-span-3" : ""} col-span-12`}>
       <video
         ref={videoPlayer}
-        className="w-full h-auto max-w-5xl"
+        className="w-full h-auto max-w-5xl aspect-[1024/768]"
         controls
         preload="auto"
         src={props.videoSrc}
