@@ -6,7 +6,6 @@ import Document, {
 } from 'next/document'
 import type { DocumentProps } from 'next/document'
 import i18nextConfig from 'next-i18next.config'
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 type Props = DocumentProps & {
   // add custom document props
@@ -30,7 +29,6 @@ class MyDocument extends Document<Props> {
           <Main />
           <NextScript />
         </body>
-        <GoogleAnalytics gaId="G-LERYJCR1GM" />
       </Html>
     )
   }
