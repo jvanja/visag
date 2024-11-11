@@ -19,7 +19,6 @@ class MyDocument extends Document<Props> {
     return (
       <Html lang={currentLocale}>
         <Head>
-          <meta charSet="utf-8" />
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:600&display=optional"
             rel="stylesheet"

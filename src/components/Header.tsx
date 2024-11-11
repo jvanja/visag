@@ -36,6 +36,7 @@ const Header = () => {
     <>
       <Head>
         <title>Visag - Vizuelni stimulator govora</title>
+        <meta name="description" content={t('metaDescription')} />
       </Head>
       <header className="w-full bg-gray-900 p-4 flex items-center justify-between">
         <div className="">
