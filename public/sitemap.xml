@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://www.visag.rs/</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/en</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/en/about</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>0.2</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/en/jovan-jelic</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>0.2</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/en/contact</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>0.2</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/en/exercizes</loc>
+  <lastmod>2024-11-11T11:48:11+01:00</lastmod>
+  <priority>0.2</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/en/terms-of-service</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>0.2</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/about</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/jovan-jelic</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/contact</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/terms-of-service</loc>
+  <lastmod>2024-11-11T11:48:09+01:00</lastmod>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://www.visag.rs/exercizes</loc>
+  <lastmod>2024-11-11T11:48:11+01:00</lastmod>
+  <priority>0.2</priority>
+</url>
+</urlset>
